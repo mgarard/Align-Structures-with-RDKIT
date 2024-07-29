@@ -16,6 +16,8 @@ If a RDKIT object is provided for the molecule to be aligned is given, a RDKIT o
 
 
 ```
+from align_structures import custom_align
+
 # as SD text
 # Use structures with defined coordinates
 with open( 'sample1.sdf', 'r' ) as f: mol1_sd = f.read()
@@ -29,6 +31,8 @@ aligned_sd = custom_align( mol = mol2_sd, ref = mol1_sd )
 with open( "temp.sdf", 'w' ) as f: f.write( aligned_sd )
 ```
 ```
+from align_structures import custom_align
+
 # as RDKIT mol objects
 # # open structure with coordinates, represents registered structures
 mol1 = Chem.SDMolSupplier( 'sample1.sdf' )[0]
