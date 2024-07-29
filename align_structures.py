@@ -19,7 +19,6 @@ def custom_align( mol, ref ):
 
         mcs = rdFMCS.FindMCS( [ ref, mol ], completeRingsOnly=True ) # find maximum common substructure between mol and reference
         mcs = Chem.MolFromSmarts( mcs.smartsString )# convert to Mol
-        print( Chem.MolToSmiles(  mcs ) )
         Chem.SanitizeMol( mcs ) # conanicalize for smiles output
         # print( Chem.MolToSmiles(  mcs ) )
 
