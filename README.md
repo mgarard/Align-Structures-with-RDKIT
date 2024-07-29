@@ -25,7 +25,6 @@ with open( 'sample2.sdf', 'r' ) as f: mol2_sd = f.read()
 
 # align the structures
 aligned_sd = custom_align( mol = mol2_sd, ref = mol1_sd )
-# aligned_sd = custom_align( mol = mol4_sd, ref = mol3_sd )
 
 # output for visualization
 with open( "temp.sdf", 'w' ) as f: f.write( aligned_sd )
