@@ -34,13 +34,13 @@ with open( "temp.sdf", 'w' ) as f: f.write( aligned_sd )
 from align_structures import custom_align
 
 # as RDKIT mol objects
-# # open structure with coordinates, represents registered structures
+# open structure with coordinates, represents registered structures
 mol1 = Chem.SDMolSupplier( 'sample1.sdf' )[0]
 mol2 = Chem.SDMolSupplier( 'sample2.sdf' )[0]
 
 # # align the structures
 aligned_sd = custom_align( mol = mol2, ref = mol1 )
 
-# # output for visualization
+# output for visualization
 with Chem.SDWriter( "temp.sdf" ) as w: w.write( aligned_sd )
 ```
