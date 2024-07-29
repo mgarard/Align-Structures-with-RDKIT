@@ -43,3 +43,9 @@ aligned_sd = custom_align( mol = mol2, ref = mol1 )
 # output for visualization
 with Chem.SDWriter( "temp.sdf" ) as w: w.write( aligned_sd )
 ```
+
+### Discussion:
+This can be added to in many ways.  I’ll provide one example that comes to mind immediately; one big issue is more overlap between structures results in better alignment.  This can make cascading alignments result in some oddly oriented structures.  
+
+One might immediately imagine that Tanimoto similarities could be used to rank alignment pair ordering based closets neighbors.  This may not always result in the best MCS as similarities diverge but would be an easy way to get closer.   Assessing MCS is not as straightforward as Tanimoto similarities. 
+
