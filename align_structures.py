@@ -33,7 +33,7 @@ def custom_align( mol, ref ):
                 with Chem.SDWriter( molio ) as w: w.write( mol )
                 aligned_sdf = molio.getvalue()
                 molio.close()
-                print("aligned")
+                #print("aligned")
                 return aligned_sdf
             except: return mol0
         else: return mol0
