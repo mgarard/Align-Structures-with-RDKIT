@@ -4,14 +4,14 @@ This issue has come up for me several times in different contexts where automati
 
 In this solution, I find the Maximum Common Substructure ( MCS ) between the structures.  Using the MCS as a reference, the structure depiction can be aligned with the reference molecule.  RDKIT has an issue with bond sizes or overlapping atoms for some molecules which will create structures which need to be normalized.  Setting coordinate preferences resolved the bond and overlap issue. 
 
-#### Input:
+### Input:
 Aligning the second ( sampel2.sdf ) structure to the first ( sampl1.sdf ) reference structure:
 ![inputs]( https://github.com/mgarard/Align-Structures-with-RDKIT/blob/main/input.JPG)
 
-#### Output:
+### Output:
 ![outputs]( https://github.com/mgarard/Align-Structures-with-RDKIT/blob/main/output.JPG)
 
-Usage:<br>
+### Usage:<br>
 If a RDKIT object is provided for the molecule to be aligned is given, a RDKIT object is returned.  If the SD text is provided, the SD text is returned.  The latter is useful with DBs where SD texts are saved.  The reference molecule requires predefined coordinates if a desired confirmation is desired.
 
 
