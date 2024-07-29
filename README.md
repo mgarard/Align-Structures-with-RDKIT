@@ -12,7 +12,7 @@ Aligning the second ( sampel2.sdf ) structure to the first ( sampl1.sdf ) refere
 ![outputs]( https://github.com/mgarard/Align-Structures-with-RDKIT/blob/main/output.JPG)
 
 ### Usage:<br>
-If a RDKIT object is provided for the molecule to be aligned is given, a RDKIT object is returned.  If the SD text is provided, the SD text is returned.  The latter is useful with DBs where SD texts are saved.  The reference molecule requires predefined coordinates if a desired confirmation is desired.
+If a RDKIT object is provided for the molecule to be aligned is given, a RDKIT object is returned.  If the SD text is provided for the molecule to be aligned, the SD text is returned.  The latter is useful with DBs where SD texts are saved.  The reference molecule requires predefined coordinates if a desired confirmation is desired.
 
 
 ```
