@@ -37,7 +37,7 @@ from align_structures import custom_align
 mol1 = Chem.SDMolSupplier( 'sample1.sdf' )[0]
 mol2 = Chem.SDMolSupplier( 'sample2.sdf' )[0]
 
-# # align the structures
+# align the structures
 aligned_sd = custom_align( mol = mol2, ref = mol1 )
 
 # output for visualization
